@@ -10,6 +10,8 @@ import random
 for i in range(len(my_list)):
     n = random.randint(0,len(my_list)-1)
     my_list[i], my_list[n] = my_list[n], my_list[i]# алгоритм перемешивания
+    # в my_list[i] будет положен my_list[n]
+    # в my_list[n] будет положен my_list[i]
     print(my_list[i], my_list[n])
 
 print(my_list)

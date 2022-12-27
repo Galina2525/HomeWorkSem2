@@ -11,8 +11,8 @@ my_list = list(range(-n,n+1)) # формируем список
 print(my_list)
 
 indexes = input('Введите индексы: ')
-my_indexes = indexes.split(' ') # разделяем индексы пробелами
-nums = list(map(int,my_indexes))# формируем еще один лист из индексов
+my_indexes = indexes.split(' ') # разделяем индексы пробелом -строка превр. в список строк
+nums = list(map(int,my_indexes))# формируем еще один лист из индексов присваиваем int
 result = 1
 for i in range(len(nums)):# для индексов в списке индексов
     j = int(nums[i]) # это сами индексы в списке индексов
